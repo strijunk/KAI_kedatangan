@@ -44,7 +44,7 @@
 					</div>
 					<div class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100">
 						<span class="text-logo">SISTEM DISPLAY INFORMASI</span>
-						<span class="text-logo">KEBERANGKATAN KERETA API</span>
+						<span class="text-logo">KEDATANGAN KERETA API</span>
 					</div>
 					<div class="d-none d-sm-inline-block form-inline mr-auto ml-md-2 my-2 my-md-0 mw-100 navbar-search">
 					</div>
@@ -67,7 +67,7 @@
 				<div class="container-fluid">
 
 					<!-- Page Heading -->
-					<h1 class="h2 mb-4 text-center text-black-f">Jadwal Keberangkatan Kereta Api - Stasiun Poncol</h1>
+					<h1 class="h2 mb-4 text-center text-black-f">Jadwal Kedatangan Kereta Api - Stasiun Poncol</h1>
 					<!-- DataTales Example -->
 					<div class="card shadow mb-4">
 						<div class="card-body">
@@ -80,7 +80,7 @@
 											<th>No Kereta</th>
 											<th>Nama Kereta</th>
 											<th>Tujuan</th>
-											<th>Keberangkatan</th>
+											<th>Kedatangan</th>
 										</tr>
 									</thead>
 
