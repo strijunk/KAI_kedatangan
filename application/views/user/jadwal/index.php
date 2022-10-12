@@ -61,7 +61,7 @@
 						</div>
 						<div class="form-group">
 							<label>Kedatangan</label>
-							<input type="text" class="form-control" name="waktu_keberangkatan" id="waktu_keberangkatan" placeholder="Masukkan waktu keberangkatan" required>
+							<input type="text" class="form-control" name="waktu_kedatangan" id="waktu_kedatangan" placeholder="Masukkan waktu kedatangan" required>
 						</div>
 					</div>
 
@@ -104,7 +104,7 @@
 						</div>
 						<div class="form-group">
 							<label>Kedatangan</label>
-							<input type="text" class="form-control" name="waktu_keberangkatan_edit" id="waktu_keberangkatan2" placeholder="Masukkan waktu keberangkatan" required>
+							<input type="text" class="form-control" name="waktu_kedatangan_edit" id="waktu_kedatangan2" placeholder="Masukkan waktu kedatangan" required>
 						</div>
 					</div>
 
@@ -165,7 +165,7 @@
 							'<td>' + data[i].no_kereta + '</td>' +
 							'<td>' + data[i].nama_kereta + '</td>' +
 							'<td>' + data[i].tujuan_kereta + '</td>' +
-							'<td>' + data[i].waktu_keberangkatan + '</td>' +
+							'<td>' + data[i].waktu_kedatangan + '</td>' +
 							'<td style="text-align:center;">' +
 							'<a href="javascript:;" class="btn btn-primary btn-xs item_edit" data="' + data[i].id_kereta + '">Edit</a>' + ' ' +
 							'<a href="javascript:;" class="btn btn-danger btn-xs item_hapus" data="' + data[i].id_kereta + '">Hapus</a>' +
@@ -185,7 +185,7 @@
 			var no_kereta = $('#no_kereta').val();
 			var nama_kereta = $('#nama_kereta').val();
 			var tujuan_kereta = $('#tujuan_kereta').val();
-			var waktu_keberangkatan = $('#waktu_keberangkatan').val();
+			var waktu_kedatangan = $('#waktu_kedatangan').val();
 			$.ajax({
 				type: "POST",
 				url: "<?php echo base_url('user/jadwal/store') ?>",
@@ -195,14 +195,14 @@
 					no_kereta: no_kereta,
 					nama_kereta: nama_kereta,
 					tujuan_kereta: tujuan_kereta,
-					waktu_keberangkatan: waktu_keberangkatan,
+					waktu_kedatangan: waktu_kedatangan,
 				},
 				success: function(data) {
 					$('[name="jalur_kereta"]').val("");
 					$('[name="no_kereta"]').val("");
 					$('[name="nama_kereta"]').val("");
 					$('[name="tujuan_kereta"]').val("");
-					$('[name="waktu_keberangkatan"]').val("");
+					$('[name="waktu_kedatangan"]').val("");
 					$('#ModalaAdd').modal('hide');
 					getData();
 				}
@@ -222,14 +222,14 @@
 					id: id
 				},
 				success: function(data) {
-					$.each(data, function(id_kereta, jalur_kereta, no_kereta, nama_kereta, tujuan_kereta, waktu_keberangkatan) {
+					$.each(data, function(id_kereta, jalur_kereta, no_kereta, nama_kereta, tujuan_kereta, waktu_kedatangan) {
 						$('#ModalaEdit').modal('show');
 						$('[name="id_edit"]').val(data.id_kereta);
 						$('[name="jalur_kereta_edit"]').val(data.jalur_kereta);
 						$('[name="no_kereta_edit"]').val(data.no_kereta);
 						$('[name="nama_kereta_edit"]').val(data.nama_kereta);
 						$('[name="tujuan_kereta_edit"]').val(data.tujuan_kereta);
-						$('[name="waktu_keberangkatan_edit"]').val(data.waktu_keberangkatan);
+						$('[name="waktu_kedatangan_edit"]').val(data.waktu_kedatangan);
 					});
 				}
 			});
@@ -243,7 +243,7 @@
 			var no_kereta = $('#no_kereta2').val();
 			var nama_kereta = $('#nama_kereta2').val();
 			var tujuan_kereta = $('#tujuan_kereta2').val();
-			var waktu_keberangkatan = $('#waktu_keberangkatan2').val();
+			var waktu_kedatangan = $('#waktu_kedatangan2').val();
 
 			$.ajax({
 				type: "POST",
@@ -255,14 +255,14 @@
 					no_kereta: no_kereta,
 					nama_kereta: nama_kereta,
 					tujuan_kereta: tujuan_kereta,
-					waktu_keberangkatan: waktu_keberangkatan,
+					waktu_kedatangan: waktu_kedatangan,
 				},
 				success: function(data) {
 					$('[name="jalur_kereta_edit"]').val("");
 					$('[name="no_kereta_edit"]').val("");
 					$('[name="nama_kereta_edit"]').val("");
 					$('[name="tujuan_kereta_edit"]').val("");
-					$('[name="waktu_keberangkatan_edit"]').val("");
+					$('[name="waktu_kedatangan_edit"]').val("");
 					$('#ModalaEdit').modal('hide');
 					getData();
 				}

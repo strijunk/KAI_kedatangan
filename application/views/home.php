@@ -175,7 +175,7 @@
 								'<td>' + data[i].no_kereta + '</td>' +
 								'<td>' + data[i].nama_kereta + '</td>' +
 								'<td>' + data[i].tujuan_kereta + '</td>' +
-								'<td>' + data[i].waktu_keberangkatan + '</td>' +
+								'<td>' + data[i].waktu_kedatangan + '</td>' +
 								'</tr>';
 						}
 						$('#show_data').html(html);

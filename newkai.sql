@@ -28,7 +28,7 @@ CREATE TABLE `jadwal_kereta` (
   `no_kereta` varchar(20) NOT NULL,
   `nama_kereta` varchar(30) NOT NULL,
   `tujuan_kereta` varchar(40) NOT NULL,
-  `waktu_keberangkatan` varchar(30) NOT NULL,
+  `waktu_kedatangan` varchar(30) NOT NULL,
   PRIMARY KEY (`id_kereta`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;

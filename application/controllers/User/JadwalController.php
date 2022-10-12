@@ -39,7 +39,7 @@ class JadwalController extends CI_Controller
 			'no_kereta'		=> $post['no_kereta'],
 			'nama_kereta'  	=> ucwords($post['nama_kereta']),
 			'tujuan_kereta'	=> ucwords($post['tujuan_kereta']),
-			'waktu_keberangkatan'	=> $post['waktu_keberangkatan'],
+			'waktu_kedatangan'	=> $post['waktu_kedatangan'],
 
 		);
 
@@ -77,7 +77,7 @@ class JadwalController extends CI_Controller
 			'no_kereta'		=> $post['no_kereta'],
 			'nama_kereta'  	=> ucwords($post['nama_kereta']),
 			'tujuan_kereta'	=> ucwords($post['tujuan_kereta']),
-			'waktu_keberangkatan'	=> $post['waktu_keberangkatan'],
+			'waktu_kedatangan'	=> $post['waktu_kedatangan'],
 		);
 		$this->Jadwal->update($data, $id);
 		echo json_encode($data);
