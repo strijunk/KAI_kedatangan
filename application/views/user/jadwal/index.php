@@ -18,7 +18,7 @@
 							<th>No Kereta</th>
 							<th>Nama Kereta</th>
 							<th>Tujuan</th>
-							<th>Keberangkatan</th>
+							<th>Kedatangan</th>
 							<th>Aksi</th>
 						</tr>
 					</thead>
@@ -60,7 +60,7 @@
 							<input type="text" class="form-control" name="tujuan_kereta" id="tujuan_kereta" placeholder="Masukkan lokasi tujuan kereta" required>
 						</div>
 						<div class="form-group">
-							<label>Keberangkatan</label>
+							<label>Kedatangan</label>
 							<input type="text" class="form-control" name="waktu_keberangkatan" id="waktu_keberangkatan" placeholder="Masukkan waktu keberangkatan" required>
 						</div>
 					</div>
@@ -103,7 +103,7 @@
 							<input type="text" class="form-control" name="tujuan_kereta_edit" id="tujuan_kereta2" placeholder="Masukkan lokasi tujuan kereta" required>
 						</div>
 						<div class="form-group">
-							<label>Keberangkatan</label>
+							<label>Kedatangan</label>
 							<input type="text" class="form-control" name="waktu_keberangkatan_edit" id="waktu_keberangkatan2" placeholder="Masukkan waktu keberangkatan" required>
 						</div>
 					</div>
